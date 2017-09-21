@@ -1,0 +1,4 @@
+<%Tweet.all.each do |tweet|%>
+  <h3><%=User.find(tweet.user_id).username%></h3>
+    <p><%=tweet.content%></p>
+<%end%>

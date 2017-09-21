@@ -1,0 +1,7 @@
+<h3><%=User.find(@tweet.user_id).username%></h3>
+  <p><%=@tweet.content%></p>
+  <li><a href="tweets/<%=@tweet.id%>/edit">Edit Tweet</a></li>
+  <form action="/tweets/<%=@tweet.id%>/delete" method="post">
+    <input type="hidden" id="hidden" name="_method" value="delete">
+    <button type="submit">Delete Tweet</button>
+  </form>

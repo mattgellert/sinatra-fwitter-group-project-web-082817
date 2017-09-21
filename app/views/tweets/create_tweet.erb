@@ -1,0 +1,6 @@
+<h2>Add a tweet</h2>
+<form action="/tweets/new" method="POST">
+  <p>Status: <input type="text" name="content"></p>
+  <input type="hidden" name="user_id" value="<%=@user.id%>">
+  <input class="btn btn-primary" type="submit" id="submit">
+</form>
